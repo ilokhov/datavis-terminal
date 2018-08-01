@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6,
+p, a, img, ol, ul, li,
+form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+header, main, footer, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 16px;
+  color: #2a2a2a;
+}
+h1 {
+  font-size: 2.5em;
+  line-height: 1.35;
+  font-weight: 400;
+  margin-bottom: 1em;
+}
+h2 {
+  font-size: 1.8em;
+  line-height: 1.35;
+  font-weight: 400;
+  margin: 2em 0 0.5em;
+}
+p {
+  line-height: 1.5;
+  margin: 1em 0;
+}
+a {
+  color: #0095dd;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+code {
+  font-family: monospace;
+  color: #31a354;
+  background: #fafafa;
+  border-radius: 2px;
+  border: 1px solid #ccc;
+  padding: 2px 4px;
+}
+.hidden {
+  visibility: hidden;
+}
+.wrap {
+  max-width: 1060px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+main {
+  margin: 2em 0 4em;
+}
+#chart {
+  color: #000;
+  position: relative;
+}
+svg {
+  display: block;
+}
+text {
+  pointer-events: none;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+}
+.tooltip {
+  background: #fff;
+  color: #000;
+  border: 1px solid #222;
+  border-radius: 3px;
+  width: auto;
+  height: auto;
+  padding: 20px 40px;
+  font-size: 16px;
+  line-height: 1.5;
+  white-space: nowrap;
+  position: absolute;
+  pointer-events: none;
+  display: none;
+}
+#line-chart {
+  margin-top: 40px;
+}
+.line-chart-title {
+  margin: 20px 0;
+  font-size: 0.85em;
+}
+#line-chart svg {
+  overflow: visible;
+}
+#line-chart .domain {
+  display: none;
+}
+#line-chart .tick line {
+  stroke: #ccc;
+}
+#line-chart .tick text {
+  fill: #999;
+}
+#line-chart .line {
+  fill: none;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  stroke-width: 1.5;
+}
+.text {
+  max-width: 700px;
+}
+footer {
+  margin: 2em 0;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+    margin-top: 1.5em;
+  }
+}

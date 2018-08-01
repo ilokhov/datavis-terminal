@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Visualising how I use the Terminal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <main>
+      <h1>Visualising how I use the Terminal</h1>
+      <div id="chart"></div>
+      <div class="text">
+        <h2>Description</h2>
+        <p>
+          After switching full time to using Mac OS for development, I have been using the terminal extensively. I wanted to find out what types of <b>commands</b> I use more often and whether there are any trends, such as using a particular set of commands more frequently over time. To visualise my terminal usage I created a <b>treemap</b> which displays how frequently I used each type of command. All commands are categorised into different types such <b>“Package managers”</b> and <b>“Git”</b>. For each command type I also included a <b>line chart</b> which shows frequency of execution over time (on a monthly basis). This is visible when hovering over a corresponding treemap cell. Covered time period is from start of November 2017 until end of June 2018.
+        </p>
+        <h2>Data extraction and preparation</h2>
+        <p>
+          I extracted the <b>command data</b> from <code>.bash-history</code>, a file where each executed command is saved. By default only a limited number of commands is stored, however it is possible to increase this by assigning a value to the <code>HISTFILESIZE</code> variable in <code>.bash-profile</code>. I set it to <code>1000000</code>, which should be enough for a while :)
+        </p>
+        <p>
+          <code>.bash-history</code> also normally doesn’t save the time and date of an executed command, but I enabled the addition of <b>timestamps</b> for each command by adding <code>HISTTIMEFORMAT='%F %T '</code> to <code>.bash-profile</code>.
+        </p>
+        <p>
+          To extract and clean the data from <code>.bash-history</code> I wrote a <b>Node.js script</b>, although moving commands into their categories required a bit of manual work. Categorisation itself was rather subjective and I ended up coming up with categories that simply made sense to me.
+        </p>
+        <h2>Visualisation</h2>
+        <p>
+          To create the visualisation itself I used <b>D3.js</b>.
+        </p>
+        <p>
+          Looking at the result, what becomes apparent is that I tend to use the terminal mostly for a limited set of purposes such as Git and moving around directories. The “Basic manipulation” category is dominated by <code>cd</code> command and its aliases — this shows that I still rely a lot on Finder to perform file operations. This is definitely something that I would like to change in the future by using commands for a more diverse set of tasks.
+        </p>
+        <h2>Notes</h2>
+        <p>
+          All commands with fewer than 5 entries and misspelled ones were excluded. Commands which were run with <code>sudo</code> were included as normal commands. I aggregated the same commands with different attributes into one, so for example <code>git add</code> and <code>git commit</code> both count towards <code>git</code>. Aliases which I use for certain commands, for example to quickly move to a certain directory, are aggregated under <code>alias</code> in each particular category.
+        </p>
+      </div>
+    </main>
+    <footer>
+      by <a href="http://ivanlokhov.com/">Ivan Lokhov</a> / <a href="https://github.com/ilokhov/datavis-terminal">Source</a>
+    </footer>
+  </div>
+  <script src="js/bundle.js"></script>
+</body>
+</html>

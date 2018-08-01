@@ -1,0 +1,277 @@
+{
+  "key": "commands",
+  "values": [
+    {
+      "key": "Other",
+      "values": [
+        {
+          "key": "exit",
+          "value": 570
+        },
+        {
+          "key": "nginx",
+          "value": 262
+        },
+        {
+          "key": "ssh",
+          "value": 48
+        },
+        {
+          "key": "chmod",
+          "value": 33
+        },
+        {
+          "key": "build",
+          "value": 18
+        },
+        {
+          "key": "curl",
+          "value": 15
+        },
+        {
+          "key": "which",
+          "value": 12
+        },
+        {
+          "key": "scp",
+          "value": 10
+        },
+        {
+          "key": "ssh-keygen",
+          "value": 7
+        },
+        {
+          "key": "for",
+          "value": 7
+        },
+        {
+          "key": "ping",
+          "value": 5
+        },
+        {
+          "key": "ssh-copy-id",
+          "value": 5
+        },
+        {
+          "key": "alias",
+          "value": 29,
+          "_group": [
+            {
+              "key": "http-server",
+              "value": 17
+            },
+            {
+              "key": "cf-cache",
+              "value": 12
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "Git",
+      "values": [
+        {
+          "key": "git",
+          "value": 5953
+        }
+      ]
+    },
+    {
+      "key": "Basic manipulation",
+      "values": [
+        {
+          "key": "cd",
+          "value": 2029
+        },
+        {
+          "key": "ls",
+          "value": 971
+        },
+        {
+          "key": "rm",
+          "value": 79
+        },
+        {
+          "key": "mkdir",
+          "value": 23
+        },
+        {
+          "key": "touch",
+          "value": 19
+        },
+        {
+          "key": "cp",
+          "value": 11
+        },
+        {
+          "key": "mv",
+          "value": 6
+        },
+        {
+          "key": "alias",
+          "value": 591,
+          "_group": [
+            {
+              "key": "dw",
+              "value": 346
+            },
+            {
+              "key": "dw-plugins",
+              "value": 187
+            },
+            {
+              "key": "ll",
+              "value": 58
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "File content reading/editing",
+      "values": [
+        {
+          "key": "cat",
+          "value": 193
+        },
+        {
+          "key": "subl",
+          "value": 19
+        },
+        {
+          "key": "nano",
+          "value": 11
+        },
+        {
+          "key": "vim",
+          "value": 6
+        },
+        {
+          "key": "less",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "key": "Hexo",
+      "values": [
+        {
+          "key": "hexo",
+          "value": 400
+        },
+        {
+          "key": "alias",
+          "value": 612,
+          "_group": [
+            {
+              "key": "hexo-cs",
+              "value": 612
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "key": "Make",
+      "values": [
+        {
+          "key": "make",
+          "value": 950
+        }
+      ]
+    },
+    {
+      "key": "Package managers",
+      "values": [
+        {
+          "key": "npm",
+          "value": 643
+        },
+        {
+          "key": "brew",
+          "value": 40
+        },
+        {
+          "key": "yarn",
+          "value": 31
+        },
+        {
+          "key": "composer",
+          "value": 29
+        }
+      ]
+    },
+    {
+      "key": "General script execution",
+      "values": [
+        {
+          "key": "node",
+          "value": 402
+        },
+        {
+          "key": "php",
+          "value": 53
+        },
+        {
+          "key": "sh",
+          "value": 13
+        },
+        {
+          "key": "python",
+          "value": 7
+        }
+      ]
+    },
+    {
+      "key": "Installed script execution",
+      "values": [
+        {
+          "key": "sips",
+          "value": 26
+        },
+        {
+          "key": "font-awesome-svg-png",
+          "value": 10
+        },
+        {
+          "key": "aws",
+          "value": 9
+        },
+        {
+          "key": "uglifyjs",
+          "value": 7
+        },
+        {
+          "key": "mapshaper",
+          "value": 6
+        },
+        {
+          "key": "less",
+          "value": 5
+        },
+        {
+          "key": "mdls",
+          "value": 5
+        }
+      ]
+    },
+    {
+      "key": "Build scripts",
+      "values": [
+        {
+          "key": "rollup",
+          "value": 188
+        },
+        {
+          "key": "grunt",
+          "value": 10
+        },
+        {
+          "key": "webpack",
+          "value": 5
+        }
+      ]
+    }
+  ]
+}
