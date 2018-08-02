@@ -108,6 +108,9 @@ text {
 #line-chart .tick line {
   stroke: #ccc;
 }
+#line-chart .x-axis .tick line {
+  display: none;
+}
 #line-chart .tick text {
   fill: #999;
 }

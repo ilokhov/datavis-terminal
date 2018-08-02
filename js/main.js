@@ -179,6 +179,7 @@ window.addEventListener("load", function() {
           lineChart
             .append("g")
             .attr("transform", `translate(0, ${lineHeight})`)
+            .attr("class", "x-axis")
             .call(axisBottom(x));
 
           const numTicks = maxValue <= 5 ? 2 : 5;
