@@ -12,7 +12,7 @@
   "devDependencies": {
     "rollup-plugin-buble": "^0.19.2",
     "rollup-plugin-node-resolve": "^3.3.0",
-    "rollup-plugin-serve": "^0.4.2",
+    "rollup-plugin-serve": "^1.0.2",
     "rollup-plugin-uglify": "^3.0.0"
   },
   "dependencies": {
